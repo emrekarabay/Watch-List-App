@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+::selection {
+    background: #285430;
+    color: #fff;
+}
+
+input {
+    caret-color: #285430;
+}
+
+i{
+    color: #285430; 
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
