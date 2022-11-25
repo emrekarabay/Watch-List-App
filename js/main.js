@@ -41,18 +41,21 @@ function loadFilmsToUI() {
 }
 
 function addNewFilm() {
-  ui.deleteFilmList();
-  const films = storage.getFilmsFromStorage(KEY_NAME);
-  const newFilm = new Movie(
-    filmTitle.value,
-    filmDirector.value,
-    posterUrl.value,
-    filmDate.value
-  );
-  films.push(newFilm);
-  localStorage.setItem(KEY_NAME, JSON.stringify(films));
-  loadFilmsToUI();
-  ui.inputDelete();
+  if (ui.emptyControl()) {
+    ui.deleteFilmList();
+    const films = storage.getFilmsFromStorage(KEY_NAME);
+    const newFilm = new Movie(
+      filmTitle.value,
+      filmDirector.value,
+      posterUrl.value,
+      filmDate.value
+    );
+    films.push(newFilm);
+    localStorage.setItem(KEY_NAME, JSON.stringify(films));
+    loadFilmsToUI();
+    ui.inputDelete();
+    ui.alert("success", "movie upload successful", 2000);
+  }
 }
 
 function clearAll() {
@@ -64,6 +67,7 @@ function clearAll() {
 function deleteFilm(e) {
   ui.deleteFilmItem(e);
   storage.deleteItemFromStorage(e);
+  ui.alert("success", "Deletion Successful", 2000);
 }
 
 function editFilm(e) {
@@ -84,4 +88,5 @@ function updateFilm(e) {
     ui.getUIFilms(film);
   });
   ui.inputDelete();
+  ui.alert("success", "movie add successful", 2000);
 }
