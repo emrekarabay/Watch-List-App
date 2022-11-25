@@ -58,10 +58,6 @@ npm i node-sass
 npm i bootstrap@5.2.3
 ```
 
-```sh
-npm i bootstrap-icons
-```
-
 5.Paste this code
 
 ```json
@@ -81,7 +77,9 @@ in the <strong>package.json</strong> file.
 ```sh
 npm run sass
 ```
+
 7.Now you can write your own codes for each file in the <strong>scss</strong> folder and see it on your screen.
+
 <!-- CONTACT -->
 
 ## Contact

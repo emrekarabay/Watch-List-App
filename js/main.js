@@ -88,5 +88,5 @@ function updateFilm(e) {
     ui.getUIFilms(film);
   });
   ui.inputDelete();
-  ui.alert("success", "movie add successful", 2000);
+  ui.alert("success", "movie update successful", 2000);
 }
