@@ -54,7 +54,7 @@ function addNewFilm() {
     localStorage.setItem(KEY_NAME, JSON.stringify(films));
     loadFilmsToUI();
     ui.inputDelete();
-    ui.alert("success", "movie upload successful", 2000);
+    ui.alert("success", "Successfully added", 2000);
   }
 }
 
@@ -67,7 +67,7 @@ function clearAll() {
 function deleteFilm(e) {
   ui.deleteFilmItem(e);
   storage.deleteItemFromStorage(e);
-  ui.alert("success", "Deletion Successful", 2000);
+  ui.alert("success", "Successfully deleted", 2000);
 }
 
 function editFilm(e) {
@@ -88,5 +88,5 @@ function updateFilm(e) {
     ui.getUIFilms(film);
   });
   ui.inputDelete();
-  ui.alert("success", "movie update successful", 2000);
+  ui.alert("success", "Updated successfully", 2000);
 }
