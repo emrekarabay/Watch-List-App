@@ -81,7 +81,7 @@ in the <strong>package.json</strong> file.
 ```sh
 npm run sass
 ```
-
+7.Now you can write your own codes for each file in the <strong>scss</strong> folder and see it on your screen.
 <!-- CONTACT -->
 
 ## Contact
