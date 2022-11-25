@@ -9,7 +9,7 @@
     <br />
     <a href="https://github.com/emrekarabay/Watch-List-App"><strong>Explore the docs »</strong></a>
     <br />
-   
+    <a href="https://watch-list-app.netlify.app/" target="_blank">View Demo</a>
   </p>
 </div>
 
