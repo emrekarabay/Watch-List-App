@@ -1,5 +1,4 @@
 node_modules
-css/**
 .vscode
 package.json
 package-lock.json
