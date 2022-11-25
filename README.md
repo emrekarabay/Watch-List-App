@@ -30,7 +30,7 @@ To get a local copy up and running follow these steps.
 
 ### Prerequisites
 
-[Node.js](https://nodejs.org/en/download/)
+[Node.js](https://nodejs.org/en/download/)\
 [Visual Studio Code](https://code.visualstudio.com/download)
 
 ### Installation
@@ -75,9 +75,9 @@ instead of the line containing
 
 in the <strong>package.json</strong> file.
 
-6.Open a folder named <strong>css</strong> in the top directory of the application.\
+6.Open a folder named <strong>css</strong> in the top directory of the application.
 
-7.Run the following command on the terminal screen\
+7.Run the following command on the terminal screen
 
 ```sh
 npm run sass
